@@ -1,0 +1,76 @@
+/* color 1 #13254B color 2 #B11B1B*/
+
+.primary-color {
+    color: #13254B;
+}
+
+.secondary-color {
+    color: #FD160A;
+}
+
+.third-color {
+    color: #B11B1B;
+}
+
+.primary-background-color {
+    background-color: #13254B;
+}
+
+.secondary-background-color {
+    background-color: #FD160A;
+}
+
+.third-background-color {
+    background-color: #B11B1B;
+}
+
+#app {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.router-link-exact-active {
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: #13254B;
+    border-color: #13254B;
+}
+
+.btn-success:hover {
+      background-color:#FD160A;
+      border-color: #FD160A;
+      transition: 0.3s;
+  }
+
+.badge-success {
+    background-color: #FD160A;
+    border-color: #FD160A;
+}
+
+.card-product {
+    border-radius: 15px;
+}
+
+.card-img-top {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+}
+
+.breadcrumb-item.active {
+    font-weight: bold;
+    color: black;
+}
+
+.img-fluid {
+    border-radius: 15px;
+}
+
+.container {
+   max-width: 95% !important;/*Set your own width %; */
+}
