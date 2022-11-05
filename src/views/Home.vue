@@ -57,7 +57,7 @@ export default {
     },
   },
   mounted() {
-      ProductDataService.retrieveAllProducts('')
+      ProductDataService.retrieveProductsRecomendation()
       .then((response) => this.setProducts(response.data))
       .catch((error) => console.log(error))
   },

@@ -9,6 +9,11 @@ class ProductDataService {
         return axios.get(`${API_URL}/products?nama_makanan=`+foodName);
     }
 
+    retrieveProductsRecomendation() {
+
+        return axios.get(`${API_URL}/products/recomendation`);
+    }
+
     retrieveProduct(uuid) {
 
         return axios.get(`${API_URL}/products/${uuid}`);
