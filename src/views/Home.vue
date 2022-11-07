@@ -4,23 +4,25 @@
     <div class="container">
       <Hero />
 
-      <div class="row mt-4">
-        <div class="col">
-          <h2>
-            Makanan
-            <strong class="secondary-color">Terlaris</strong>
-          </h2>
+      <div v-if="products.data != null">
+        <div class="row mt-4">
+          <div class="col">
+            <h2>
+              Makanan
+              <strong class="secondary-color">Terlaris</strong>
+            </h2>
+          </div>
+          <div class="col">
+            <router-link to="/foods" class="btn btn-success float-right">
+              <b-icon-eye></b-icon-eye> Lihat Semua
+            </router-link>
+          </div>
         </div>
-        <div class="col">
-          <router-link to="/foods" class="btn btn-success float-right">
-            <b-icon-eye></b-icon-eye> Lihat Semua
-          </router-link>
-        </div>
-      </div>
 
-      <div class="row mb-4">
-        <div class="col-md-4 mt-4" v-for="product in products.data" :key="product.uuid">
-          <CardProduct :product="product"/>
+        <div class="row mb-4">
+          <div class="col-md-4 mt-4" v-for="product in products.data" :key="product.uuid">
+            <CardProduct :product="product"/>
+          </div>
         </div>
       </div>
     </div>
